@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikiverse | Explore Knowledge</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announcement">
+    ✦ A fresh way to explore the world's knowledge
+    <button class="announcement-close">×</button>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">
+        wiki<span>verse</span>
+        <small>THE WORLD'S KNOWLEDGE</small>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a class="active" href="#discover">Discover</a>
+      <a href="#topics">Explore topics</a>
+      <a href="#featured">Featured</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle">☾</button>
+      <a class="contribute-btn" href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank">
+        Contribute ↗
+      </a>
+      <button class="menu-btn" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="discover">
+
+      <div class="hero-content">
+        <div class="eyebrow">✦ KNOW MORE. SEE FURTHER.</div>
+
+        <h1>Curiosity has<br>no <em>limits.</em></h1>
+
+        <p class="hero-copy">
+          One world. Millions of stories. Discover the people,
+          places, ideas and moments that shape our universe.
+        </p>
+
+        <form class="search-box" id="searchForm">
+          <span class="search-icon">⌕</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="What would you like to discover?"
+          >
+          <button type="submit">Explore →</button>
+        </form>
+
+        <div class="popular-searches">
+          <span>POPULAR:</span>
+          <button data-search="Artificial intelligence">Artificial intelligence</button>
+          <button data-search="Ancient Egypt">Ancient Egypt</button>
+          <button data-search="Ocean">The ocean</button>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <div class="planet">
+          <div class="planet-shine"></div>
+          <span class="continent c1"></span>
+          <span class="continent c2"></span>
+          <span class="continent c3"></span>
+        </div>
+
+        <div class="floating-card card-top">
+          <span>✧</span>
+          <div>
+            <b>8 million+</b>
+            <small>English articles</small>
+          </div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span>◎</span>
+          <div>
+            <b>Always curious</b>
+            <small>Knowledge for everyone</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / EXPLORE THE UNIVERSE OF IDEAS</span>
+        <span>SCROLL TO DISCOVER ↓</span>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats-strip">
+      <div>
+        <strong>6.8M+</strong>
+        <span>English articles</span>
+      </div>
+      <div>
+        <strong>300+</strong>
+        <span>Languages</span>
+      </div>
+      <div>
+        <strong>20B+</strong>
+        <span>Monthly page views</span>
+      </div>
+      <div class="stats-note">
+        Knowledge is a journey.<br>
+        <b>Start anywhere.</b>
+      </div>
+    </section>
+
+    <!-- TOPICS -->
+    <section class="section topics-section" id="topics">
+
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow dark-eyebrow">A WORLD OF IDEAS</div>
+          <h2>Where will curiosity<br><em>take you?</em></h2>
+        </div>
+
+        <p>
+          Follow a question, find a new passion,
+          or dive into something completely unexpected.
+        </p>
+      </div>
+
+      <div class="topic-grid">
+
+        <a class="topic-card topic-science"
+           href="https://en.wikipedia.org/wiki/Portal:Science" target="_blank">
+          <span class="topic-number">01</span>
+          <span class="topic-symbol">⚛</span>
+          <div>
+            <h3>Science</h3>
+            <p>Understand how our universe works.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+        <a class="topic-card topic-history"
+           href="https://en.wikipedia.org/wiki/Portal:History" target="_blank">
+          <span class="topic-number">02</span>
+          <span class="topic-symbol">⌛</span>
+          <div>
+            <h3>History</h3>
+            <p>Explore the stories that shaped us.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+        <a class="topic-card topic-tech"
+           href="https://en.wikipedia.org/wiki/Portal:Technology" target="_blank">
+          <span class="topic-number">03</span>
+          <span class="topic-symbol">⌘</span>
+          <div>
+            <h3>Technology</h3>
+            <p>Discover ideas building tomorrow.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+        <a class="topic-card topic-nature"
+           href="https://en.wikipedia.org/wiki/Portal:Environment" target="_blank">
+          <span class="topic-number">04</span>
+          <span class="topic-symbol">❋</span>
+          <div>
+            <h3>Nature</h3>
+            <p>Meet the extraordinary living world.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+        <a class="topic-card topic-art"
+           href="https://en.wikipedia.org/wiki/Portal:Arts" target="_blank">
+          <span class="topic-number">05</span>
+          <span class="topic-symbol">✳</span>
+          <div>
+            <h3>Arts & Culture</h3>
+            <p>Experience creativity across cultures.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+        <a class="topic-card topic-space"
+           href="https://en.wikipedia.org/wiki/Portal:Space" target="_blank">
+          <span class="topic-number">06</span>
+          <span class="topic-symbol">✦</span>
+          <div>
+            <h3>Space</h3>
+            <p>Look beyond our little blue planet.</p>
+          </div>
+          <span class="topic-arrow">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="featured-section" id="featured">
+
+      <div class="featured-image">
+        <img
+          src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=85"
+          alt="Galaxy in deep space"
+        >
+        <span class="image-label">FEATURED DISCOVERY · 01</span>
+      </div>
+
+      <div class="featured-copy">
+        <div class="eyebrow dark-eyebrow">TODAY'S DEEP DIVE</div>
+
+        <h2>The universe<br>is waiting.</h2>
+
+        <p>
+          From distant galaxies to the mysteries of dark matter,
+          space reminds us how much there is still to discover.
+        </p>
+
+        <a class="text-link"
+           href="https://en.wikipedia.org/wiki/Universe" target="_blank">
+          Explore the universe ↗
+        </a>
+
+        <div class="featured-meta">
+          <span>ASTRONOMY</span>
+          <span>8 MIN READ</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RANDOM DISCOVERY -->
+    <section class="daily-section">
+
+      <div class="daily-title">
+        <div class="eyebrow dark-eyebrow">A LITTLE SOMETHING NEW</div>
+
+        <h2>Make today a<br><em>discovery day.</em></h2>
+
+        <p>
+          Not sure where to begin?
+          Let chance lead the way.
+        </p>
+
+        <button id="randomArticle" class="primary-btn">
+          Surprise me ✦
+        </button>
+      </div>
+
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+
+        <blockquote>
+          The important thing is not to stop questioning.
+          Curiosity has its own reason for existing.
+        </blockquote>
+
+        <div class="quote-author">
+          <span class="author-avatar">A</span>
+          <span>
+            <b>Albert Einstein</b>
+            <small>Physicist · Thinker · Curious mind</small>
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="bottom-cta">
+      <div>
+        <span class="cta-star">✳</span>
+        <h2>Knowledge grows<br>when we share it.</h2>
+        <p>
+          Be part of a global community making
+          information accessible to everyone.
+        </p>
+      </div>
+
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:Introduction" target="_blank">
+        Discover Wikipedia ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">
+        wiki<span>verse</span>
+        <small>THE WORLD'S KNOWLEDGE</small>
+      </span>
+    </a>
+
+    <p>An independent visual redesign concept inspired by Wikipedia.</p>
+
+    <div>
+      <a href="https://www.wikipedia.org/" target="_blank">Original Wikipedia</a>
+      <span>© 2026 Wikiverse concept</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
